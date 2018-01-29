@@ -123,7 +123,7 @@ public class PlayScreen implements Screen {
 //    }
     public void handleInput(float dt){
 
-        if(Gdx.input.justTouched()) {
+        if(Gdx.input.isTouched()) {
             if (player.b2body.getLinearVelocity().y < 50) {
                 if(player.b2body.getLinearVelocity().x<0){
                     player.b2body.setLinearVelocity(-VX,10000);
@@ -190,10 +190,11 @@ public class PlayScreen implements Screen {
 
         Gdx.gl.glClearColor(0,0,0,1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        if ( player.b2body.getPosition().y>900/Bird.PPM) {
+        if ( player.b2body.getPosition().y>1000/Bird.PPM) {
 //            player.b2body.setTransform(new Vector2(player.b2body.getPosition().x,player.b2body.getPosition().y-700));
-            player.b2body.setTransform(player.b2body.getPosition().x,player.b2body.getPosition().y-400/Bird.PPM,0);
+            player.b2body.setTransform(player.b2body.getPosition().x,player.b2body.getPosition().y-640/Bird.PPM,0);
             gamecam.position.y = player.b2body.getPosition().y;
+
         }
         renderer.render();
 
@@ -204,6 +205,7 @@ public class PlayScreen implements Screen {
         game.batch.setProjectionMatrix(gamecam.combined);
         game.batch.begin();
         player.draw(game.batch);
+
 
         game.batch.end();
 

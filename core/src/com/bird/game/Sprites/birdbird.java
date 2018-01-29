@@ -1,5 +1,6 @@
 package com.bird.game.Sprites;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -43,16 +44,25 @@ public class birdbird extends Sprite {
         stateTimer = 0;
         goingRight = true;
         Array<TextureRegion> frames= new Array<TextureRegion>();
-        for(int i=0;i<7;i++)
-            frames.add(new TextureRegion(getTexture(), i*32, 65,  31, 31));
+
+
+        for(int i=0;i<7;i++) {
+            frames.add(new TextureRegion(getTexture(), i * 32, 65, 32, 32));
+            frames.get(i).getTexture().setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
+        }
         birdFlap = new Animation(0.075f,frames);
         frames.clear();
+
+
         for(int i=0;i<4;i++)
-            frames.add(new TextureRegion(getTexture(), 128+i*32, 96,  30, 30));
+            frames.add(new TextureRegion(getTexture(), 128+i*32, 96,  32, 32));
         birdGlide = new Animation(0.75f,frames);
         frames.clear();
+
         defbirdbird();
         birdglide = new TextureRegion(getTexture(), 518, 20,  32, 32);
+
+
         setBounds(0,0,20,20);
         setRegion(birdglide);
 

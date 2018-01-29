@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.1" orientation="orthogonal" renderorder="right-down" width="20" height="60" tilewidth="64" tileheight="64" infinite="0" nextobjectid="31">
+ <tileset firstgid="1" source="Mobile - Tiny Wings - All Assets.tsx"/>
+ <tileset firstgid="17" source="theWall.tsx"/>
+ <layer name="Tile Layer 1" width="20" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt0kEKwCAQQ1EXvYBttfe/qVtxEWgIUuh/4Gog6MRSAAB/1cWsGnmnmLVw3hXOe4y8W8yc/e3sI72/dL9f6GO+37HM0vtz7qfem+7D/c/qAAAAvDEAMQwCyw==
+  </data>
+ </layer>
+ <objectgroup name="walls">
+  <object id="9" x="384" y="2112" width="384" height="64"/>
+ </objectgroup>
+ <objectgroup name="ground">
+  <object id="10" x="768" y="1216" width="64" height="960"/>
+  <object id="11" x="320" y="1216" width="64" height="960"/>
+ </objectgroup>
+ <objectgroup name="bird">
+  <object id="28" x="522.5" y="1874" width="45" height="35">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

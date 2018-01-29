@@ -8,16 +8,30 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.bird.game.Screens.PlayScreen;
 
+import java.lang.reflect.Method;
+import java.util.List;
+
 public class Bird extends Game {
 	public SpriteBatch batch;
-	public static final int W = 800;
-	public static final int H =600;
-	
+	public static int Width;
+	public static int Height;
+	public static final float PPM=2;
+	public static final float PPM2=1f;
+
+
+	public static final short OBJECT_BIT = 32;
+
+//	public int
+	public static int[] ourdimensions(){
+		Height = Gdx.graphics.getHeight();
+		Width = Gdx.graphics.getWidth();
+		return new int[] {Width, Height};	};
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
 		setScreen(new PlayScreen(this));
 
+		Gdx.app.log("HEREHERE","HIII");
 	}
 
 	@Override

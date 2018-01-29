@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.1" orientation="orthogonal" renderorder="right-down" width="20" height="80" tilewidth="16" tileheight="16" infinite="0" nextobjectid="18">
+ <tileset firstgid="1" source="allofthem (2).tsx"/>
+ <tileset firstgid="145" source="32.tsx"/>
+ <layer name="back" width="20" height="80">
+  <data encoding="base64" compression="zlib">
+   eJztzKENAAAMA6D+7/rxflgqEViapCMZXj6fz+fz+Xw+n8/n8/l8Pp/P5/P5fN/vALw3XR4=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="20" height="80">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAMCXARkAAAE=
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="20" height="80">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAMCXARkAAAE=
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="20" height="80" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztziEOgDAQBdEFCwYsNcWBA1fuf7COweCgBjGbTL7bvBwRK3XUx/sbaKSNdjropInmD/8WSlTooqxPnz59+vTp06dPnz59+vTp06dPnz59+vTp+62vdZ++1r19FUrJT70=
+  </data>
+ </layer>
+ <objectgroup name="Right 2">
+  <object id="4" x="288" y="-1.33333" width="32" height="1281.33"/>
+ </objectgroup>
+ <objectgroup name="Left 3">
+  <object id="14" x="0" y="1.33333" width="32" height="1278.67"/>
+ </objectgroup>
+ <objectgroup name="Floor 4">
+  <object id="13" x="32" y="1248" width="256" height="32"/>
+ </objectgroup>
+</map>

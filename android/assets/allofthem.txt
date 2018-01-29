@@ -1,0 +1,61 @@
+allofthem.png
+size: 484, 102
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+batttt
+  rotate: false
+  xy: 199, 1
+  size: 128, 32
+  orig: 128, 32
+  offset: 0, 0
+  index: -1
+BG_bestever
+  rotate: false
+  xy: 227, 35
+  size: 256, 32
+  orig: 256, 32
+  offset: 0, 0
+  index: -1
+coin16
+  rotate: false
+  xy: 329, 1
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+gliding
+  rotate: false
+  xy: 69, 1
+  size: 128, 26
+  orig: 128, 26
+  offset: 0, 0
+  index: -1
+hearty
+  rotate: false
+  xy: 1, 1
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+newbird1
+  rotate: false
+  xy: 1, 35
+  size: 224, 32
+  orig: 224, 32
+  offset: 0, 0
+  index: -1
+pur
+  rotate: false
+  xy: 35, 1
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+the_wall
+  rotate: false
+  xy: 1, 69
+  size: 256, 32
+  orig: 256, 32
+  offset: 0, 0
+  index: -1

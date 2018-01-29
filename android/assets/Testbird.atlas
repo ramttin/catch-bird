@@ -1,0 +1,55 @@
+
+Testbird.png
+size: 1024,64
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BG_bestever
+  rotate: false
+  xy: 260, 20
+  size: 256, 32
+  orig: 256, 32
+  offset: 0, 0
+  index: -1
+batttt
+  rotate: false
+  xy: 744, 20
+  size: 128, 32
+  orig: 128, 32
+  offset: 0, 0
+  index: -1
+coin16
+  rotate: false
+  xy: 2, 2
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+hearty
+  rotate: false
+  xy: 148, 2
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+newbird1
+  rotate: false
+  xy: 518, 20
+  size: 224, 32
+  orig: 224, 32
+  offset: 0, 0
+  index: -1
+pur
+  rotate: false
+  xy: 874, 20
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+the_wall
+  rotate: false
+  xy: 2, 20
+  size: 256, 32
+  orig: 256, 32
+  offset: 0, 0
+  index: -1

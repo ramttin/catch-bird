@@ -82,7 +82,7 @@ public class birdbird extends Sprite {
 
         switch (currentState){
             case FLAPPING:
-                region = birdFlap.getKeyFrame(stateTimer,true);
+                region = birdFlap.getKeyFrame(stateTimer,false);
                 break;
             default:
                 region = birdGlide.getKeyFrame(stateTimer,true);
@@ -100,9 +100,9 @@ public class birdbird extends Sprite {
         return region;
     }
     public State getState(){
-        if(b2body.getLinearVelocity().y>0 || !birdFlap.isAnimationFinished(0)){
+        if(b2body.getLinearVelocity().y>0 || !birdFlap.isAnimationFinished(4)){
             return  State.FLAPPING;
-        }else if(b2body.getLinearVelocity().y<0 & birdFlap.isAnimationFinished(2)){
+        }else if(b2body.getLinearVelocity().y<0 & birdFlap.isAnimationFinished(4)){
             return State.GLIDING;
         }else {
             return State.GLIDING;

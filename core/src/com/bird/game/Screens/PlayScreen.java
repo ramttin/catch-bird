@@ -108,6 +108,7 @@ public class PlayScreen implements Screen {
 
     }
 
+
     @Override
     public void show() {
 
@@ -179,7 +180,7 @@ public class PlayScreen implements Screen {
         }
 
             if (gamecam.position.y < player.b2body.getPosition().y) {
-                gamecam.position.y = player.b2body.getPosition().y;
+                gamecam.position.y += (player.b2body.getPosition().y-gamecam.position.y)/60;
             }
             Gdx.app.log("list222", world.getContactList().toString());
 
@@ -193,7 +194,7 @@ public class PlayScreen implements Screen {
         if ( player.b2body.getPosition().y>1000/Bird.PPM) {
 //            player.b2body.setTransform(new Vector2(player.b2body.getPosition().x,player.b2body.getPosition().y-700));
             player.b2body.setTransform(player.b2body.getPosition().x,player.b2body.getPosition().y-640/Bird.PPM,0);
-            gamecam.position.y = player.b2body.getPosition().y;
+            gamecam.position.y = gamecam.position.y-640/Bird.PPM;
 
         }
         renderer.render();
